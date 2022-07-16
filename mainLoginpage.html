@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" class="htimg">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agro-Tech</title>
+    <link rel="stylesheet" href="css/mainLoginpage.css">
+</head>
+
+<body>
+    <main>
+        <div class="card">
+            <img src="img/login-img1.jpg" alt="logo">
+            <p>
+                <h1>Agro-Tech</h1>
+            </p>
+            <p>
+                <h3 class="txt"><b>The TradeMark of AgroProducts</b></h3>
+            </p>
+            <p id="cop">@copyright2025</p>
+        </div>
+        <section class="glass" id="glass">
+
+            <form action="/login" method="POST" class="dash">
+
+                <div class="logo">
+                    <img src="img/login-img2.jpg" alt="logo">
+                </div>
+                <div class="user">
+                    <input type="text" id="user" name="email" autocomplete="off" placeholder="shyam" class="form-control">
+                    <label for="name" class="form-label" required> 
+            Email
+            </label>
+                </div>
+                <div class="pass">
+                    <input type="password" autocomplete="off" required placeholder="123" name="pass" class="form-control">
+                    <label for="" class="form-label">Password</label>
+                </div>
+                <div class="btn">
+                    <button> Submit</button>
+                </div>
+            </form>
+            <div class="last">
+                <form action="/NewUser" method="POST">
+                    <p>New User --><button type="submit">Click-Here</button></p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        var yr = new Date();
+        yr = yr.getFullYear();
+
+        document.getElementById("cop").innerHTML = "@CopyRight " + yr.toString();
+    </script>
+</body>
+
+</html>

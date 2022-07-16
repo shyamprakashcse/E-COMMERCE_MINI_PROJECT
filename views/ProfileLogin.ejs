@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/ProfileLogin.css">
+    <title>ProfileLogin</title>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <nav>
+            <h1>AgroTech</h1>
+            <p>New User Click Here ---></p>
+            <form action="/NewUser" method="POST">
+                <button type="submit">New User</button>
+            </form>
+        </nav>
+    </div>
+    <div class="outer">
+        <div class="inner">
+            <form action="/ProfileLoginVerify" method="POST">
+                <p>Login Form</p>
+                <input type="email" name="EMAIL" id="" placeholder="Email">
+                <input type="password" name="PASS" id="" placeholder="PassWord">
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

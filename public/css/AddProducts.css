@@ -1,0 +1,89 @@
+body {
+    height: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(to left, #76f, #554fe8);
+    font-family: "Segoe UI", Neutrif, -apple-system, BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    height: 400vh;
+    color: #0b0742;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.outer {
+    width: 110vh;
+    height: 250vh;
+    background-color: white;
+    position: relative;
+    left: 30%;
+    top: 5%;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.4);
+}
+
+.inner {
+    width: inherit;
+    height: inherit;
+    background-color: antiquewhite;
+}
+
+.inner form {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.inner form div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: inherit;
+    margin-bottom: 10%;
+    /*background-color: aqua;*/
+}
+
+.inner form div input {
+    width: 50%;
+    height: 2em;
+    border: 2px solid black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.2);
+    margin-right: -2em;
+    background-color: white;
+    color: #554fe8;
+}
+
+.inner form div label {
+    text-transform: uppercase;
+}
+
+.item-3 {
+    margin-left: 12%;
+}
+
+.inner form button {
+    width: 8em;
+    height: 3em;
+    background-color: blue;
+    color: white;
+    border: 2px solid black;
+    margin-left: 40%;
+    cursor: pointer;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.4);
+}
+
+.inner form button:hover {
+    background-color: black;
+    color: bisque;
+    border: 2px solid bisque;
+}

@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0000ff;
+}
+
+nav {
+    background-color: white;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 7vh;
+    text-align: center;
+}
+
+.outer {
+    width: 100vh;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: beige;
+    margin-top: 10%;
+    margin-left: 20%;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.4);
+}
+
+.outer .inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    text-align: center;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.4);
+}
+
+.inner input {
+    height: inherit;
+    width: 60%;
+    height: 50%;
+    border: 3px solid black;
+    color: blue;
+    margin-top: 2%;
+    font-size: large;
+    font-weight: bold;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+.inner label {
+    font-size: large;
+    font-weight: bold;
+    margin-top: 2%;
+}
+
+button {
+    width: 20%;
+    height: 10%;
+    border: 3px solid gold;
+    font-weight: bold;
+    font-size: large;
+    background-color: white;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    color: beige;
+}

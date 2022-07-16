@@ -1,0 +1,131 @@
+body {
+    height: 400vh;
+    width: 700vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #0000ff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar {
+    background-color: white;
+    width: 100%;
+    height: 7rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.nav-bar nav {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+.nav-bar button {
+    width: 12em;
+    height: 3em;
+    background-color: white;
+    cursor: pointer;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bold;
+    border: 3px solid gold;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    width: 12em;
+    height: 3em;
+    background-color: white;
+    cursor: pointer;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bold;
+    border: 3px solid gold;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    background-color: black;
+    color: beige;
+}
+
+.outer {
+    width: 50em;
+    height: 30em;
+    background-color: lightcya;
+    margin-top: 3%;
+    margin-left: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+}
+
+.outer .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card {
+    width: 30em;
+    background-color: bisque;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.8);
+}
+
+.card img {
+    height: 250px;
+    width: 70%;
+    margin-top: 2%;
+    border: 2px solid gold;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.7);
+}
+
+.card #imgid,
+#p-id {
+    background-color: white;
+}
+
+.contact {
+    width: 100%;
+    height: 10vh;
+    background-color: lightgoldenrodyellow;
+    margin-top: 5%;
+}
+
+.contact h3 {
+    margin-left: 13%;
+    padding-top: 20px;
+}

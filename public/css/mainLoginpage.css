@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.htimg {
+    background-image: url("../img/login-img3.jpg");
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+main {
+    min-height: 250vh;
+    background-image: inherit;
+    display: flex;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    background-position: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    background: linear-gradient(to top left, #05386b, #5cdb95);
+    align-items: center;
+    justify-content: space-evenly;
+    width: 420px;
+    height: 200px;
+    border-radius: 2rem;
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.card h1 {
+    color: white;
+}
+
+.glass {
+    min-height: 80vh;
+    width: 60%;
+    background-image: linear-gradient( to top left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1));
+    border-radius: 2rem;
+    backdrop-filter: blur(2rem);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0px;
+}
+
+.dash {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dash img {
+    height: 5rem;
+    width: 5rem;
+    /*border: 2px solid black;*/
+    border-radius: 50%;
+}
+
+.logo {
+    position: absolute;
+    top: 10%;
+}
+
+.user {
+    position: absolute;
+    top: 50%;
+}
+
+.pass {
+    position: absolute;
+    top: 60%;
+}
+
+.dash input {
+    width: 30rem;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    background: inherit;
+    transition: all 0.3s;
+    font-size: 20px;
+}
+
+.user label {
+    position: absolute;
+    left: 1px;
+    font-size: 1.5em;
+}
+
+.pass label {
+    position: absolute;
+    left: 1px;
+    font-size: 1.5em;
+}
+
+.form-control::placeholder {
+    color: transparent;
+}
+
+.dash input:focus~.form-label,
+.form-control:not(:placeholder-shown)~.form-label {
+    left: 0;
+    font-weight: bold;
+    font-size: 20px;
+    color: blue;
+    transform: translateY(-1.25em) scale(0.8);
+}
+
+.dash input:focus {
+    border-bottom: 0.1em solid white;
+    transition: all 0.3s;
+}
+
+.user:focus-within {
+    transform: scale(1.05, 1.05);
+}
+
+.pass:focus-within {
+    transform: scale(1.05, 1.05);
+}
+
+.glass:hover {
+    background-image: linear-gradient( to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+}
+
+.btn {
+    position: absolute;
+    bottom: 20%;
+    left: 45%;
+    width: 15%;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.btn button {
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    border-radius: 16px;
+    border-width: medium;
+    border-color: black;
+    outline: none;
+    font-size: 20px;
+    color: red;
+    font-weight: bolder;
+}
+
+button:hover {
+    background: inherit;
+    outline-width: medium;
+    border-color: black;
+    border-width: medium;
+    color: blue;
+}
+
+.last {
+    position: absolute;
+    top: 90%;
+    left: 40%;
+}
+
+.last p {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.last button {
+    color: blue;
+    background: inherit;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+
+/*media screen*/
+
+@media screen and (max-width: 700px) {
+    .card {
+        min-width: 80vh;
+        top: 5%;
+        left: 0;
+        right: 10%;
+    }
+    .glass {
+        min-width: 70vh;
+        min-height: 120vh;
+        left: 10%;
+        top: 10%;
+        right: 50%;
+    }
+    .glass .dash .user {
+        width: 90%;
+        left: 10%;
+        height: 70%;
+    }
+    .glass .dash input {
+        width: 90%;
+    }
+    .glass .dash .pass {
+        top: 67%;
+        left: 10%;
+        width: 90%;
+    }
+    .glass .dash .btn {
+        width: 40%;
+        bottom: 12%;
+        left: 40%;
+    }
+    .last {
+        position: absolute;
+        bottom: 0;
+        left: 30%;
+        text-align: end;
+        height: fit-content;
+    }
+    .last p {
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 800px) {
+    .card {
+        left: 20%;
+    }
+    .glass {
+        min-height: 120vh;
+        min-width: 100vh;
+    }
+    .glass .dash .btn {
+        bottom: 20%;
+        width: 20%;
+    }
+    .last p {
+        text-align: end;
+    }
+}

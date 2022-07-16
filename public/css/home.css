@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #0b0742;
+    scroll-behavior: smooth;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #fbd83d;
+    background-color: inherit;
+    background-color: #fee4b3;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid white;
+}
+
+.nav-bar div {
+    height: 100%;
+    margin-top: 2%;
+}
+
+.nav-bar div p a {
+    height: 100%;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.logo-box img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.company h1 {
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.user-info span {
+    color: #563c16;
+    color: red;
+}
+
+.user-info h3 {
+    color: blue;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.nav-bar div {
+    text-align: center;
+}
+
+.nav-bar div a:hover {
+    margin-top: 0%;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.nav-bar div button {
+    width: 8rem;
+    height: 3em;
+    background-color: white;
+    color: #563c16;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: bold;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.5);
+    border: 2px solid #0b0742;
+}
+
+.nav-bar div button:hover {
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.5);
+    background-color: #fbd83d;
+    background-color: black;
+    color: #0b0742;
+    color: gold;
+}
+
+@media screen and (min-width:200px) and (max-width:1110px) {
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        min-width: 200px;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    }
+    .nav-bar div {
+        width: 100%;
+        height: 25%;
+        text-align: center;
+    }
+}
+
+#about {
+    background-color: white;
+    height: 20%;
+    width: 100%;
+    position: absolute;
+    top: 25%;
+}
+
+#about .about-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0b0742;
+    color: white;
+    background: #fbd83d;
+    background: #0b0742;
+    font-weight: bolder;
+}
+
+#about .about-inner:hover {
+    /* background: white; 
+    background: black;
+    color: #0b0742;
+    color: gold;*/
+    background: black;
+    color: bisque;
+    box-shadow: 9px 18px 27px -2px rgba(0, 0, 0, 0.8);
+    border: 2px solid black;
+}
+
+.products {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 90vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 50px;
+    grid-column-gap: 10px;
+}
+
+.products .card {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: bisque;
+    margin-top: 20px;
+    border: 2px solid #fbd83d;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
+}
+
+.card div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    word-wrap: break-word;
+    text-indent: 2px;
+}
+
+.card img {
+    width: 70%;
+    height: 250px;
+    margin-top: 0;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.card .title,
+.contact {
+    background-color: white;
+}
+
+@media screen and (min-width:200px) and (max-width:1110px) {
+    #about {
+        position: absolute;
+        top: 120vh;
+        height: 40vh;
+        width: 100%;
+    }
+    .about-inner {
+        height: max-content;
+    }
+    #about .about-inner p {
+        text-align: center;
+        margin-bottom: 5em;
+    }
+    .products {
+        position: absolute;
+        top: 300vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 10px;
+    }
+    .products .card img {
+        width: 70%;
+    }
+}

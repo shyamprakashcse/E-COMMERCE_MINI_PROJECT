@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/LoginError.css">
+    <title>LoginError</title>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner">
+            <h1>AgroTech</h1>
+            <form action="/profilelogerr" method="post">
+                <h1>Oops.</h1>
+                <h3>Error in Login</h3>
+                <p>
+                    <%=TEXT%>
+                </p>
+                <p>Relax you can login again by clicking the login button</p>
+                <button type="submit">Login</button>
+            </form>
+            <form action="/ErrNewUser" method="post">
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

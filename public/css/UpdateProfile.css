@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0000ff;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    text-align: center;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.6);
+}
+
+nav h1 {
+    padding-top: 1%;
+}
+
+.outer-token {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    background-color: white;
+    width: 100vh;
+    margin-left: 25%;
+    height: 50vh;
+}
+
+.token {
+    background-color: inherit;
+    width: 50%;
+    height: 5vh;
+    margin-bottom: 5%;
+    text-align: center;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.token button {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    cursor: pointer;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bold;
+    border: 3px solid gold;
+    text-transform: capitalize;
+}
+
+button:hover {
+    background-color: black;
+    color: beige;
+}

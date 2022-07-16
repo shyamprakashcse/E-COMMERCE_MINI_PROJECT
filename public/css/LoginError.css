@@ -1,0 +1,52 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #0b0742;
+}
+
+.outer {
+    width: 70vh;
+    height: 60vh;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    background-color: inherit;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+    background: inherit;
+    color: white;
+    text-align: center;
+}
+
+.inner p {
+    color: gold;
+}
+
+button {
+    width: 15em;
+    height: 3em;
+    background-color: white;
+    border: 2px solid gold;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    color: gold;
+    z-index: 10;
+}

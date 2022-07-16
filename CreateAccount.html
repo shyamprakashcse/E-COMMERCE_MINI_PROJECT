@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/CreateAccount.css">
+    <title>Agro-Tech</title>
+</head>
+
+<body>
+    <!-- nav bar section -->
+
+    <nav class="nav-bar" id="navbar">
+        <div class="nav-box">
+            <div class="nav-logo"><img src="img/newAcc-img3.jpg" alt=""></div>
+            <div class="nav-txt">
+                <p>Already Have An Account?</p>
+            </div>
+            <form action="/navlog" method="POST">
+                <div class="nav-btn"><button type="submit">Login</button></div>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Text card -->
+    <section class="text-card">
+        <div class="text-bar">
+            <div class="fp">
+                <p class="para">Getting Started With Us !</p>
+            </div>
+            <div class="sp">
+                <p class="para">Explore your Products At Free Of Cost</p>
+            </div>
+        </div>
+    </section>
+    <!--  account board-->
+
+    <div class="board">
+
+        <div class="fb">
+            <img src="img/newAcc-img3.jpg" alt="">
+            <div class="card-1">
+                <p>Quality Assurance</p>
+            </div>
+            <div class="card-2">
+                <p>No Commision</p>
+            </div>
+            <div class="card-3">
+                <p>Securable</p>
+            </div>
+            <div class="card-4">
+                <p>User Friendly</p>
+            </div>
+        </div>
+
+        <div class="sb">
+            <h1>Create Your Free Account <br>With AgroTech</h1>
+
+            <form action="/create" method="POST" class="dash" method="POST">
+                <div class="user">
+                    <input type="text" id="user" required="" name="username" autocomplete="off" placeholder="shyam" class="form-control">
+
+                    <label for="Name" class="form-label" required> UserName</label>
+                </div>
+
+                <div class="email">
+                    <input type="email" autocomplete="off" required name="mail" placeholder="123" class="form-control">
+                    <label for="" class="form-label">Email</label>
+                </div>
+
+                <div class="pass">
+                    <input type="password" autocomplete="off" required placeholder="123" name="passkey" class="form-control">
+                    <label for="" class="form-label">Password</label>
+                </div>
+
+                <div class="phone">
+                    <input type="tel" autocomplete="off" required placeholder="123" name="mobileno" class="form-control">
+                    <label for="" class="form-label">Mobile No</label>
+                </div>
+
+                <button type="submit" class="btn">Submit</button>
+
+
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

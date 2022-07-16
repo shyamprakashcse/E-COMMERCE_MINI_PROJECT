@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
+    <title>AgroTech-Home</title>
+</head>
+
+<body>
+    <div class="nav-bar">
+
+
+        <div class="logo-box">
+            <img src="img/newAcc-img3.jpg" alt="logo">
+        </div>
+
+        <div class="company">
+            <h1>Agro Tech</h1>
+            <h4>Trademark of Quality</h4>
+        </div>
+        <div class="user-info">
+            <h3>
+                <span>USERNAME:</span>
+                <%=name%>
+            </h3>
+            <h3><span>E-Mail:</span>
+                <%=mail%>
+            </h3>
+        </div>
+
+        <div id="home">
+            <p><a href="#">HOME</a></p>
+        </div>
+        <div id="About-US">
+            <p><a href="#about">ABOUT US</a></p>
+        </div>
+        <div id="profile">
+            <p><a href="/ProfileLogin">PROFILE</a></p>
+        </div>
+        <div id="Products">
+            <p><a href="#prod">PRODUCTS</a></p>
+        </div>
+        <div id="Add-prod">
+            <form action="/addproducts" method="POST"><button>ADD PRODUCTS</button></form>
+        </div>
+        <form action="/logout" method="POST">
+            <div id="Log-Out">
+                <button>LOGOUT</button>
+            </div>
+        </form>
+
+    </div>
+
+    <div id="about">
+
+        <div class="about-inner">
+            <p>We are provide a free service to sell your product</p>
+            <p>Feel free to post your product</p>
+            <p>You can use our service to enhance your growth in your respective domain</p>
+        </div>
+
+        <div class="about-inner">
+            <p>Your growth is our growth.We are always working for you to promote your products at free of cost</p>
+        </div>
+        <div class="about-inner">
+            <p>Farmers friendliness</p>
+        </div>
+
+    </div>
+
+    <div class="products" id="prod">
+
+
+        <% for(var i=0;i<ITEM.length;i++){ %>
+            <div class="card">
+                <div class="img-box">
+                    <img src="<%=ITEM[i].ImagePath%>" alt="logo">
+                </div>
+                <div class="title">
+                    <h1>
+                        <%=ITEM[i].Title%>
+                    </h1>
+                </div>
+
+                <div class="product-name">
+                    <h3>PRODUCT_NAME: </h3>
+                    <h3>
+                        <%=ITEM[i].ProductName%>
+                    </h3>
+                </div>
+
+                <div class="describe">
+                    <h3>PRICE</h3>
+                    <h5>
+                        <%=ITEM[i].Description%>
+                    </h5>
+                </div>
+
+
+                <div class="contact">
+
+
+                    <h3>
+                        <%=ITEM[i].Address%>
+                    </h3>
+                </div>
+
+                <div class="user-mail">
+                    <h3>USER</h3>
+                    <h5>
+                        <%=ITEM[i].EMAIL%>
+                    </h5>
+                </div>
+
+
+            </div>
+            <%}%>
+    </div>
+</body>
+
+</html>

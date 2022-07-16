@@ -1,0 +1,437 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-image: linear-gradient(to top right, #5cdb95, #8ee4af);
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 450vh;
+    width: 100%;
+}
+
+
+/* nav-section*/
+
+.nav-bar {
+    position: relative;
+    width: 100%;
+    top: 0;
+    border: 2px solid wheat;
+    border-bottom: 1em solid khaki;
+    height: 5%;
+    background: white;
+}
+
+.nav-box {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    background-color: inherit;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-logo {
+    height: 25%;
+    width: 15%;
+    position: absolute;
+    left: 2%;
+}
+
+.nav-logo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.nav-txt {
+    position: absolute;
+    right: 150px;
+    top: 10px;
+}
+
+.nav-txt p {
+    font-size: 2em;
+    color: #05386b;
+}
+
+.nav-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 100px;
+    height: 50px;
+    outline: none;
+}
+
+.nav-btn button {
+    width: 100%;
+    height: 70%;
+    border-radius: 16px;
+    background-color: #05386b;
+    outline: beige;
+    color: beige;
+    border: 2px solid beige;
+}
+
+.nav-btn a {
+    text-decoration: none;
+    color: beige;
+}
+
+.nav-btn button:hover {
+    cursor: pointer;
+}
+
+
+/*nav-bar media query*/
+
+@media screen and (min-width: 200px) and (max-width: 620px) {
+    .nav-bar {
+        height: 20%;
+        width: 100%;
+    }
+    .nav-comp {
+        display: none;
+    }
+    .nav-box {
+        flex-direction: column;
+        background: white;
+        height: 100%;
+    }
+    .nav-logo {
+        top: 2%;
+        left: 30%;
+    }
+    .nav-txt {
+        top: 30%;
+        left: 30%;
+        width: 50%;
+        height: 20%;
+    }
+    .nav-btn {
+        top: 70%;
+        left: 30%;
+    }
+}
+
+
+/*text card section*/
+
+.text-card {
+    position: relative;
+    left: 25%;
+    margin-top: 5%;
+    background: inherit;
+    outline: white;
+    border: 2px solid white;
+    width: 40%;
+    height: 10%;
+    background: linear-gradient(to top left, #fef9c7, #fce181);
+    box-shadow: 9px 11px 27px -2px rgba(0, 0, 0, 0.8);
+    border-bottom: 0.3em solid white;
+}
+
+.text-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.fp {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    font-size: 2em;
+    color: darkblue;
+}
+
+.sp {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    font-size: 2em;
+    color: darkblue;
+}
+
+
+/*media query for text card*/
+
+@media screen and (min-width: 200px) and (max-width: 620px) {
+    .text-card {
+        margin-top: 15%;
+        width: 70%;
+        height: 20%;
+        left: 15%;
+    }
+}
+
+
+/*board login section css*/
+
+.board {
+    height: 30%;
+    width: 60%;
+    background: white;
+    position: relative;
+    left: 15%;
+    top: 2%;
+    margin-top: 2%;
+}
+
+.board:hover {
+    box-shadow: 9px 11px 27px -2px rgba(0, 0, 0, 0.8);
+}
+
+.fb {
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    position: relative;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fb img {
+    width: 50%;
+    height: 100px;
+    position: relative;
+    top: 2%;
+}
+
+.fb div {
+    width: 90%;
+    height: 10%;
+    background-color: #fce181;
+    margin-top: 2%;
+    position: relative;
+    top: 15%;
+    border-radius: 16px;
+    text-align: center;
+    color: #05386b;
+    padding: 5%;
+    font-size: large;
+    font-weight: bold;
+    box-shadow: 9px 11px 27px -2px rgba(0, 0, 0, 0.8);
+}
+
+.fb .card-1 {
+    position: relative;
+    top: 10%;
+}
+
+.fb .card-2 {
+    position: relative;
+    top: 12%;
+}
+
+.fb .card-3 {
+    position: relative;
+    top: 14%;
+}
+
+.fb .card-4 {
+    position: relative;
+    top: 16%;
+}
+
+.fb:hover {
+    box-shadow: 9px 11px 27px -2px rgba(0, 0, 0, 0.8);
+}
+
+
+/*second board sb*/
+
+.sb {
+    width: 65%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: white;
+}
+
+.sb:hover {
+    box-shadow: 9px 11px 27px -2px rgba(0, 0, 0, 0.8);
+}
+
+.sb h1 {
+    text-align: center;
+    color: #05386b;
+}
+
+.dash {
+    background-color: inherit;
+    width: 80%;
+    height: 70%;
+    position: relative;
+    left: 10%;
+    top: 10%;
+}
+
+.dash .user,
+.pass,
+.email,
+.phone {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+}
+
+.user {
+    top: 0%;
+}
+
+.email {
+    top: 15%;
+}
+
+.pass {
+    top: 30%;
+}
+
+.phone {
+    top: 45%;
+}
+
+.dash input {
+    width: 90%;
+    border: none;
+    outline: none;
+    height: 30px;
+    background: inherit;
+    transition: all 0.3s;
+    font-size: 20px;
+    border-bottom: 2px solid #5cdb95;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: blue;
+}
+
+.dash .user label,
+.email label,
+.pass label,
+.phone label {
+    position: absolute;
+    left: 1px;
+    font-size: 1.5em;
+}
+
+input::placeholder {
+    color: transparent;
+}
+
+.dash input:focus~.form-label,
+.form-control:not(:placeholder-shown)~.form-label {
+    left: 0;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fccd04;
+    transform: translateY(-1.25em) scale(0.8);
+}
+
+.dash input:focus {
+    border-bottom: 0.1em solid transparent;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.user:focus-within {
+    transform: scale(1.05, 1.05);
+    box-shadow: 9px 11px 27px -2px rgba(0, 0, 0, 0.8);
+}
+
+.pass:focus-within {
+    transform: scale(1.05, 1.05);
+    box-shadow: 9px 11px 27px -2px rgba(0, 0, 0, 0.8);
+}
+
+.email:focus-within {
+    transform: scale(1.05, 1.05);
+    box-shadow: 9px 11px 27px -2px rgba(0, 0, 0, 0.8);
+}
+
+.phone:focus-within {
+    transform: scale(1.05, 1.05);
+    box-shadow: 9px 11px 27px -2px rgba(0, 0, 0, 0.8);
+}
+
+
+/*submit button*/
+
+.btn {
+    position: absolute;
+    bottom: 20%;
+    left: 15%;
+    outline: inherit;
+    background-color: blue;
+    border: 2px solid blue;
+    color: white;
+    font-size: 20px;
+    box-shadow: 9px 11px 27px -2px rgba(0, 0, 0, 0.8);
+    width: 40%;
+    height: 10%;
+    border-radius: 16px;
+}
+
+.btn:hover {
+    background: #16ffbd;
+    outline: #5cdb95;
+    border: #5cdb95;
+    color: black;
+    font-weight: bold;
+}
+
+
+/* media query for board*/
+
+@media screen and (min-width: 200px) and (max-width: 700px) {
+    .board {
+        width: 100%;
+        left: 5%;
+        height: 40%;
+    }
+    .fb {
+        width: 35%;
+    }
+    .board .fb div {
+        width: 90%;
+    }
+    .board .fb div p {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+    }
+    .board .sb .dash .user {
+        top: 0%;
+    }
+    .board .sb .dash .email {
+        top: 15%;
+    }
+    .board .sb .dash .pass {
+        top: 30%;
+    }
+    .board .sb .dash .phone {
+        top: 45%;
+    }
+    .btn {
+        top: 60%;
+        width: 100px;
+        height: 50px;
+        left: 10%;
+    }
+}

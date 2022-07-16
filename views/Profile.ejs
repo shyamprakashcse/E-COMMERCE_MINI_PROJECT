@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserProfile</title>
+    <link rel="stylesheet" href="css/Profile.css">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <nav>
+            <h1>AgroTech</h1>
+            <p>PROFILE</p>
+            <form action="/UpdateProfile" method="POST">
+                <button type="submit">UPDATE PROFILE</button>
+            </form>
+            <!-- <form action="/UpdateProduct" method="POST">
+                <button type="submit">UPDATE PRODUCT</button>
+            </form> -->
+            <form action="/profiletohome" method="POST">
+                <button type="submit">LOGIN</button>
+            </form>
+
+        </nav>
+    </div>
+
+    <div class="outer">
+        <div class="content">
+            <label for="">NAME</label>
+            <h3>
+                <%=PROFILENAME%>
+            </h3>
+        </div>
+
+
+        <div class="content">
+            <label for="">EMAIL</label>
+            <h3>
+                <%=PROFILEEMAIL%>
+            </h3>
+        </div>
+
+        <div class="content">
+            <label for="">Mobile</label>
+            <h3>
+                <%=PROFILEMOBILE%>
+            </h3>
+        </div>
+        <div class="content">
+
+            <h3>
+                Your Products
+            </h3>
+        </div>
+
+    </div>
+
+
+
+    <%for(var i=0;i<PROFILEPRODUCTS.length;i++){ %>
+        <%const product=PROFILEPRODUCTS[i];%>
+            <div class="card">
+
+                <img src="<%=product.ImagePath%>" alt="">
+
+                <h4 id="imgid">PRODUCT-ID :
+                    <%=product.ImagePath%>
+                </h4>
+                <h1>
+                    <%=product.Title%>
+                </h1>
+                <h1>
+                    <%=product.Address%>
+                </h1>
+                <h1>
+                    <%=product.Description%>
+                </h1>
+                <h1 id="p-id">
+                    <%=product.ProductName%>
+                </h1>
+            </div>
+            <%}%>
+                <% var d=new Date();%>
+                    <% var yr=d.getFullYear();%>
+                        <div class="contact">
+                            <h3>copyright-
+                                <%=yr%>
+                            </h3>
+                        </div>
+
+</body>
+
+</html>
